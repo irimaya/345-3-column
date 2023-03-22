@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #fff;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1rem;
+  margin: 20px 0;
+  line-height: 1.7em;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 15px;
+  padding: 18px 60px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 50px;
+}
+
+.btn-light {
+  background: #fff;
+  border: none;
+}
+
+.columns {
+  display: flex;
+}
+.columns .column {
+  padding: 60px 40px;
+}
+.columns .column .flex {
+  display: flex;
+}
+.columns .column .flex .bk-round {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+.columns .column .flex img {
+  margin-left: -40px;
+}
+.columns .column h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.columns .column .btn {
+  margin-top: 20px;
+}
+.columns .column-1 {
+  background: #d5893d;
+}
+.columns .column-1 .bk-round {
+  background: #aa6e31;
+}
+.columns .column-1 .btn {
+  color: #d5893d;
+}
+.columns .column-2 {
+  background: #2c6770;
+}
+.columns .column-2 .bk-round {
+  background: #225259;
+}
+.columns .column-2 .btn {
+  color: #2c6770;
+}
+.columns .column-3 {
+  background: #183f3f;
+}
+.columns .column-3 .bk-round {
+  background: #123132;
+}
+.columns .column-3 .btn {
+  color: #183f3f;
+}
+
+@media (max-width: 768px) {
+  .columns {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

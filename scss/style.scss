@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+$sedan-color: #d5893d;
+$sedan-color-second: #aa6e31;
+$suvs-color: #2c6770;
+$suvs-color-second: #225259;
+$luxury-color: #183f3f;
+$luxury-color-second: #123132;
+$font-stack: 'Roboto Condensed', sans-serif;
+
+// Reset
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+// Main Styling
+html,
+body {
+	font-family: $font-stack;
+	color: #fff;
+}
+
+h2 {
+	font-size: 4rem;
+	font-weight: 300;
+	// margin-bottom: 30px;
+	text-transform: uppercase;
+}
+
+// img {
+// 	max-width: 100%;
+// }
+
+p {
+	font-size: 1rem;
+	margin: 20px 0;
+	line-height: 1.7em;
+}
+
+a {
+	text-decoration: none;
+}
+
+// Utility Classes
+.btn {
+	display: inline-block;
+	font-size: 15px;
+	padding: 18px 60px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	border-radius: 50px;
+}
+
+.btn-light {
+	background: #fff;
+	border: none;
+}
+
+// 3 Columns
+.columns {
+	display: flex;
+	.column {
+		.flex {
+			display: flex;
+			.bk-round {
+				height: 70px;
+				width: 70px;
+				border-radius: 50%;
+			}
+			img {
+				margin-left: -40px;
+			}
+		}
+		padding: 60px 40px;
+		h2 {
+			margin-top: 40px;
+			margin-bottom: 20px;
+		}
+		.btn {
+			margin-top: 20px;
+		}
+		&-1 {
+			background: $sedan-color;
+			.bk-round {
+				background: $sedan-color-second;
+			}
+			.btn {
+				color: $sedan-color;
+			}
+		}
+		&-2 {
+			background: $suvs-color;
+			.bk-round {
+				background: $suvs-color-second;
+			}
+			.btn {
+				color: $suvs-color;
+			}
+		}
+		&-3 {
+			background: $luxury-color;
+			.bk-round {
+				background: $luxury-color-second;
+			}
+			.btn {
+				color: $luxury-color;
+			}
+		}
+	}
+} //End .columns
+
+@media (max-width: 768px) {
+	// 3 Columns
+	.columns {
+		flex-direction: column;
+	}
+}
